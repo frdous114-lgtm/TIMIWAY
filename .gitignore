@@ -1,0 +1,32 @@
+# Environment variables (CRITICAL - contains API keys)
+.env
+.env.local
+.env.production
+
+# Dependencies
+node_modules/
+package-lock.json
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build / Temp
+dist/
+build/
+*.log
+npm-debug.log*
+
+# Scratch files
+frontend/scratch/
+
+# Python
+__pycache__/
+*.pyc
