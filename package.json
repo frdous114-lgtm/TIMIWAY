@@ -1,6 +1,15 @@
 {
-  "dependencies": {
-    "npm": "^11.13.0",
-    "start": "^5.1.0"
+  "name": "timiway-smart-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "install-backend": "cd backend && npm install",
+    "start": "cd backend && node server.js",
+    "dev": "cd backend && npm install && npm start",
+    "build": "npm run install-backend"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }

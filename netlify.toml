@@ -1,13 +1,13 @@
 [build]
   publish = "frontend"
-  functions = "netlify/functions"
-
-[[redirects]]
-  from = "/api/auth/*"
-  to = "/.netlify/functions/auth"
-  status = 200
+  command = "echo 'Building TIMIWAY Smart...'"
 
 [[redirects]]
   from = "/api/*"
-  to = "/.netlify/functions/:splat"
+  to = "https://timiway-backend.onrender.com/api/:splat" # The user should replace this with their real backend URL
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
   status = 200
